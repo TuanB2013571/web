@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+         <style> 
+                .toppings label, .cheesy label {
+            margin-right: 25px;
+            }
+            form{
+                text-align: center;
+                border: 2px solid white;
+                background-color: aliceblue;
+                border-radius: 25px;
+            }
+            body{
+                background: rgb(63, 169, 196);
+            }
+         </style>
+        
+    </head>
+    <body>
+        <form>
+            <img src="buger.png"/>
+            <hr>
+            <h1>Create a burger!</h1>
+            <section class="protein">
+              <label for="patty">What type of protein would you like?</label>
+              <input type="text" name="patty" id="patty">
+            </section>
+            <hr width="80">
+            <section class="patties">
+              <label for="amount">How many patties would you like?</label>
+              <input type="text" name="amount" id="amount" >
+            </section>
+            <hr width="80">
+            <section class="cooked">
+              <label for="doneness">How do you want your patty cooked</label>
+              <br>
+              <span>Rare</span>
+              <input type="range" name="doneness" id="doneness" value="3" min="1" max="5">
+              <span>Well-Done</span>
+            </section>
+            <hr width="80">
+            <section class="toppings">
+              <span>What toppings would you like?</span>
+              <br>
+            
+              <input id="lettuce" name="topping" type="checkbox" value="lettuce">
+              <label for="lettuce">Lettuce</label>
+             
+              <input id="tomato" name="topping" type="checkbox" value="tomato">
+              <label for="tomato">Tomato</label>
+            
+              <input id="onion" name="topping" type="checkbox" value="onion">
+              <label for="onion">Onion</label>
+            </section>
+            <hr width="80">
+            <section>
+                <span>Would you like to add chese?<span> <br>
+                    <input type="radio" name="memberType" value="yes" checked>yes
+                    <input type="radio" name="memberType" value="no" checked>no
+            </section>
+           <section>
+                <span>What type of bun would you like ?<span>
+                <select >
+                    <option value="volvo">Sesame</option>
+                    <option value="saab">aaa</option>
+                    <option value="opel">bbb</option>
+                    <option value="audi">ccc</option>
+            </select>
+          
+            </section>
+            <hr width="80">
+            <section >
+                <span>What type of sauce would you like? </span>
+                <input type="text">
+              </section>
+              <hr width="80">
+              <section >
+                <span>Anything else you want to add</span> <br>
+                <textarea> </textarea>
+              </section>
+              <hr width="80">
+            <button type="submit">Gửi</button>
+         
+          </form>
+    </body>
+</html>
